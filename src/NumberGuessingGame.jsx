@@ -12,10 +12,10 @@ const MAX_ATTEMPTS = 5;
 const NumberGuessingGame = () => {
   const [numberToGuess, setNumberToGuess] = useState(getRandomNumber());
   const [numberOfGuesses, setNumberOfGuesses] = useState(0);
-  const [latestGuess, setLatesGuess] = useState(null);
+  // const [latestGuess, setLatesGuess] = useState(null);
 
-  const handleGuess = (guess) => {
-    setLatesGuess(Number(guess));
+  // const handleGuess = (guess) => {
+  //   setLatesGuess(Number(guess));
     setNumberOfGuesses((prev) => prev + 1);
   };
 
@@ -45,6 +45,6 @@ const NumberGuessingGame = () => {
       )}
     </div>
   );
-};
+
 
 export default NumberGuessingGame;
